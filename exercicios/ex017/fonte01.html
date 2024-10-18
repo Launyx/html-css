@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            /* font-family com mais de uma fonte como parâmetro, tenta utilizar uma fonte, caso não seja compatível com o dispositivo utilizado, ela tenta a próxima, seguindo da esquerda para a direita */
+            /* Esta é uma safe combination de fontes*/
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* É possível usar parâmetros padrões, que determinam as 3 diferentes categorias de fontes deixando para o dispositivo escolher uma família daquela categoria*/
+
+            /* Sempre terminar a combinação de famílias de fontes com uma categoria genérica*/
+            font-family: sans-serif;
+            font-family: serif;
+            font-family: monospace;
+
+            /* 
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            pt -> pontos, medida utilizada para o tamanho da fonte do programa Word
+            
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            
+            em -> relativa a altura da letra M de uma fonte
+
+            ex -> relativa a altura da letra x de uma fonte
+
+            vw -> view width, largura da tela
+            vh -> view height, altura da tela
+
+            RECOMENDAÇÃO DA W3C É USAR SOMENTE PX EM MEDIDAS ABSOLUTAS E EM EM MEDIDAS RELATIVAS
+
+            16px geralmente = 1em
+            */
+            font-size: 16px;
+
+            /* Peso da fonte, o quão "magra/gorda" a fonte é, quanto de negrito ela possui*/
+            font-weight: lighter;
+
+            font-style: italic;
+
+            text-decoration: underline;
+        }
+
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand font
+            
+            font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, accusamus similique exercitationem commodi veniam ducimus quos sunt nisi facere voluptate. Facere, ipsum mollitia. Unde quod, voluptatum non iste architecto ullam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error laborum dolore a ab nam! Accusantium rerum suscipit, maiores asperiores commodi eum at, voluptatibus, laboriosam nam ducimus pariatur facilis fuga illo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem harum ad illo quis! Laborum, sint reprehenderit magnam aut eos tempore aliquam, deleniti cupiditate est beatae pariatur odit, ut explicabo. Assumenda.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum, soluta laudantium perferendis deleniti maxime quae illum qui! Excepturi illo deleniti eveniet nobis consequatur reprehenderit nemo, commodi similique ex illum? lore</p>
+</body>
+</html>
