@@ -14,11 +14,11 @@ header{
 }
 header > h1{
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 10vw;
     margin: 0px;
     text-align: center;
     color: white;
-    font-family: 'Passion One';
+    font-family: 'Passion One', cursive;
 }
 header > p{
     margin: 0px;
@@ -34,11 +34,11 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 main p{
-    font-family: 'Sriracha';
-    width: 200px;
+    font-family: 'Sriracha', cursive;
     margin: 0px;
 }
 section{
+    font-size: 4vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -64,7 +64,6 @@ section.normal{
     padding: 30px;
 }
 .overImage{
-    width: 200px;
     padding: 10px;
     background-color: #00000047;
 }
